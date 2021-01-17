@@ -1,0 +1,33 @@
+// App wide styling
+$border-radius: 5px;
+$background-color: '#c1e1e3';
+$background-color-hover: rgb(231, 228, 228);
+$font-default: 1.1rem;
+$pad-reg: 5px;
+$pad-big: 10px;
+
+// button styles
+.btn {
+  border-radius: $border-radius;
+  padding: $pad-big;
+  font-weight: bold;
+  font-size: $font-default;
+  color: rgb(22, 0, 121);
+
+  &:hover {
+    background-color: #a5baf1;
+    border: 2px solid black;
+    transition: background-color 0.3s;
+  }
+}
+
+// input styles
+.input {
+  border-radius: $border-radius;
+  padding: $pad-reg;
+  font-size: $font-default;
+
+  &:focus {
+    background-color: $background-color-hover;
+  }
+}
