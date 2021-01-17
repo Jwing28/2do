@@ -6,6 +6,8 @@ const mockTodo = {
   text: '',
 };
 
+// Home should manage all the state.
+// Making state management simple.
 const Home = () => {
   return (
     <div>
