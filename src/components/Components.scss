@@ -3,13 +3,13 @@ $border-radius: 5px;
 $background-color: '#c1e1e3';
 $background-color-hover: rgb(231, 228, 228);
 $font-default: 1.1rem;
-$pad-reg: 5px;
-$pad-big: 10px;
+$space-reg: 5px;
+$space-big: 10px;
 
 // button styles
 .btn {
   border-radius: $border-radius;
-  padding: $pad-big;
+  padding: $space-big;
   font-weight: bold;
   font-size: $font-default;
   color: rgb(22, 0, 121);
@@ -24,10 +24,39 @@ $pad-big: 10px;
 // input styles
 .input {
   border-radius: $border-radius;
-  padding: $pad-reg;
+  padding: $space-reg;
   font-size: $font-default;
 
   &:focus {
     background-color: $background-color-hover;
   }
+}
+
+// todo
+.todo {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid;
+  border-radius: $border-radius;
+  align-items: center;
+  justify-content: center;
+  padding: $space-big;
+  margin: $space-big auto;
+  width: 50%;
+
+  .completed-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & > * {
+    margin: $space-reg;
+  }
+}
+
+// completed todo items get a strikethrough
+.completed {
+  text-decoration: line-through;
 }

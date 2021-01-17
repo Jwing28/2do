@@ -8,7 +8,7 @@ const Input = ({ onChange, placeholder, isActive = true }) => {
       className='input'
       onChange={onChange}
       placeholder={placeholder}
-      isActive
+      disabled={isActive}
     />
   );
 };
