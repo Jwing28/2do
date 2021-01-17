@@ -5,7 +5,7 @@ const styles = {
 };
 
 const Label = ({ children }) => {
-  return <div>children</div>;
+  return <div>{children}</div>;
 };
 
 export { Label };

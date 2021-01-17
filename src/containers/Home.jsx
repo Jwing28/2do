@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Button, Input, Label, Todo } from '../components/index';
+import CreateTodo from './CreateTodo';
 
 const mockTodo = {
   text: 'Take out the garbage',
@@ -28,9 +29,8 @@ const mockTodo = {
 const Home = () => {
   return (
     <div>
-      <Input />
-      <Label>Test Label</Label>
-      <Button>Test Button</Button>
+      <h1>Todo List</h1>
+      <CreateTodo />
       <Todo todo={mockTodo} />
     </div>
   );

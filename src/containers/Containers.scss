@@ -1,0 +1,12 @@
+.createTodo {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid;
+  margin-bottom: 100px;
+
+  & > * {
+    margin: 0 10px;
+  }
+}

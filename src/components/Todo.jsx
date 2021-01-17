@@ -7,9 +7,9 @@ const Todo = ({ todo = {}, onDelete, toggleComplete }) => {
   console.log(todo);
   return (
     <div className='todo'>
-      <div className={completed ? 'completed' : ''}>{text}</div>
+      <div className={completed ? 'completed label' : 'label'}>{text}</div>
       <div className='completed-container'>
-        <label>Completed?</label>
+        <label>Complete ?</label>
         <Checkbox onChange={toggleComplete} />
       </div>
       <Button onClick={onDelete}>Delete</Button>
